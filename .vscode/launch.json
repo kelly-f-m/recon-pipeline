@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Recon Pipeline: all (alvo de teste seguro)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/recon.py",
+      "args": ["all", "testphp.vulnweb.com", "--yes"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Recon Pipeline: phase1 apenas",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/recon.py",
+      "args": ["phase1", "testphp.vulnweb.com", "--yes"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Recon Pipeline: gerar relatório",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/recon.py",
+      "args": ["report", "testphp.vulnweb.com"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
